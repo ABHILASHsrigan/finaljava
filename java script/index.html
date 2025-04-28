@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   
+    <h1 style="position: absolute; left : 33%; top : 7%; " >Task Management System</h1>
+
+    <input class="box" type="text" id="taskName" placeholder="Enter task name">
+    <select  class="li" id="priority">
+        <option value="High">High</option>
+        <option value="Medium">Medium</option>
+        <option value="Low">Low</option>
+    </select>
+    <button class="btn" onclick="addTask()">Add Task</button>
+    
+    <br><br>
+    
+    <label style="position: absolute; top : 22%; left : 40%" for="filter">Filter by priority:</label>
+    <select class="box2" id="filter" onchange="filterTasks()">
+        <option value="All">All</option>
+        <option value="High">High</option>
+        <option value="Medium">Medium</option>
+        <option value="Low">Low</option>
+    </select>
+    
+    <div class="final" id="taskList"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
